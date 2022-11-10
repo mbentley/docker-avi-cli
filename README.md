@@ -1,6 +1,6 @@
-# mbentley/acme.sh
+# mbentley/avi-cli
 
-docker image for Avi NSX ALB CLI
+docker image for Avi NSX ALB CLI (`avi_shell`)
 based off of mbentley/alpine:latest
 
 ## Tags
