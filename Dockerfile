@@ -8,7 +8,7 @@ RUN apk add --no-cache py3-pip
 ARG AVI_CLI_URL="${AVI_CLI_URL:-}"
 
 # install the avi CLI
-RUN pip install --no-cache-dir "${AVI_CLI_URL}"
+RUN pip install --no-cache-dir --break-system-packages "${AVI_CLI_URL}"
 
 ENTRYPOINT ["avi_shell"]
 CMD ["-h"]
